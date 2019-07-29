@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="co.vinod.training.dao.impl.DummyProductDao"/>
+    <fullyQualifiedTypeName name="co.vinod.training.dao.impl.JdbcProductDao"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="co.vinod.training.cfg.AppConfig1"/>
+    <fullyQualifiedTypeName name="co.vinod.training.dao.ProductDao"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+</qualifiedTypeNameHistroy>

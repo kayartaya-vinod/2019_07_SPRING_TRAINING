@@ -1,0 +1,17 @@
+package co.vinod.training.programs;
+
+import co.vinod.training.dao.DaoException;
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.dao.impl.JdbcProductDao;
+
+public class P01_GetProductCount {
+
+	public static void main(String[] args) throws DaoException {
+		ProductDao dao;
+		
+		dao = new JdbcProductDao(); // tight coupling
+		int pc = dao.count();
+		
+		System.out.println("There are " + pc + " products.");
+	}
+}

@@ -1,0 +1,27 @@
+package co.vinod.training.cfg;
+
+import org.springframework.context.annotation.Configuration;
+
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.dao.impl.DummyProductDao;
+import co.vinod.training.dao.impl.JdbcProductDao;
+
+@Configuration
+public class AppConfig1 {
+
+	public AppConfig1() {
+		System.out.println("AppConfig1 instantiated!");
+	}
+
+	@Bean
+	public ProductDao dummy() {
+		System.out.println("AppConfig1.dummy() called");
+		return new DummyProductDao();
+	}
+
+	public ProductDao jdbc() {
+		System.out.println("AppConfig1.jdbc() called");
+		return new JdbcProductDao();
+	}
+
+}

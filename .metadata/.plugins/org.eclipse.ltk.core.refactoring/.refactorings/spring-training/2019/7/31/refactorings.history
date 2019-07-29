@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DummyProductDao.java&apos; to &apos;co.vinod.training.dao.impl.DummyProductDao.java&apos;&#x0A;- Original project: &apos;spring-training&apos;&#x0A;- Destination element: &apos;co.vinod.training.dao.impl.DummyProductDao.java&apos;&#x0A;- Original element: &apos;co.vinod.training.dao.impl.DummyProductDao.java&apos;" description="Copy compilation unit" destination="/src\/main\/java&lt;co.vinod.training.dao.impl{DummyProductDao.java" element1="/src\/main\/java&lt;co.vinod.training.dao.impl{DummyProductDao.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1564413917894" units="1" version="1.0"/>
+</session>

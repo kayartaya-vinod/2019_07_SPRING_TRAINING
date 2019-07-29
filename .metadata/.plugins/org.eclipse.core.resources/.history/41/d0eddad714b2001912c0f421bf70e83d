@@ -1,0 +1,11 @@
+package co.vinod.training.dao;
+
+public interface ProductDao {
+
+	// CRUD operations
+	
+	
+	// QUERIES
+	
+	public int count() throws DaoException;
+}
