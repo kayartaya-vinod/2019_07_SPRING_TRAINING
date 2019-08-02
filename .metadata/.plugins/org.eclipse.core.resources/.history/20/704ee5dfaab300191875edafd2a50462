@@ -1,0 +1,19 @@
+package co.vinod.training.cfg;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.dao.impl.JdbcProductDao;
+
+@Configuration
+public class AppConfig2 {
+
+	@Scope("prototype")
+	@Bean(name = "jdbc")
+	public ProductDao dao() {
+		return new JdbcProductDao();
+	}
+
+}

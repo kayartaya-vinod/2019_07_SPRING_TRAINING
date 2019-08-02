@@ -1,0 +1,50 @@
+package co.vinod.training.dao.impl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import co.vinod.training.dao.DaoException;
+import co.vinod.training.dao.ProductDao;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+public class JdbcProductDao implements ProductDao {
+	
+	private String driver;
+	private String url;
+	private String username;
+	private String password;
+	
+	
+	private Connection getConnection() throws ClassNotFoundException, SQLException {
+		Class.forName(driver);
+		return DriverManager.getConnection(url, username, password);
+	}
+	
+	@Override
+	public int count() throws DaoException {
+		
+		try() {
+			
+		}
+		catch(Exception ex) {
+			throw new DaoException(ex);
+		}
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+

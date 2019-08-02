@@ -1,0 +1,27 @@
+package co.vinod.training.cfg;
+
+import javax.sql.DataSource;
+
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.dao.impl.JdbcProductDao;
+
+@Configuration
+public class AppConfig3 {
+	
+	public DataSource dataSource() {
+		BasicDataSource bds = new BasicDataSource();
+		
+		
+		return bds;
+	}
+
+	@Bean(name = "jdbc")
+	public ProductDao dao() {
+		return new JdbcProductDao();
+	}
+
+}

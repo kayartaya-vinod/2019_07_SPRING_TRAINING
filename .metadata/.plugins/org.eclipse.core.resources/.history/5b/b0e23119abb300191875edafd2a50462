@@ -1,0 +1,29 @@
+package co.vinod.training.cfg;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.dao.impl.JdbcProductDao;
+
+@Configuration
+@PropertySource({ "classpath:jdbc.properties" })
+public class AppConfig2 {
+
+	@Value("${jdbc.driver}")
+	String driver;
+	@Value("${jdbc.url}")
+	String url;
+	@Value("${jdbc.username}")
+	String username;
+	@Value("${jdbc.password}")
+	String password;
+
+	@Bean(name = "jdbc")
+	public ProductDao dao() {
+		return new JdbcProductDao();
+	}
+
+}

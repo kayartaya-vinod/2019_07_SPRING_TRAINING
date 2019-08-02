@@ -1,0 +1,16 @@
+package co.vinod.training.dao.impl;
+
+import co.vinod.training.dao.DaoException;
+import co.vinod.training.dao.ProductDao;
+
+public class DummyProductDao implements ProductDao {
+
+	public DummyProductDao() {
+	}
+
+	@Override
+	public int count() throws DaoException {
+		return 125;
+	}
+
+}

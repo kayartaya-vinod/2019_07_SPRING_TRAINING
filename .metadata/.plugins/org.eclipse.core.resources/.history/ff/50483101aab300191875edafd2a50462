@@ -1,0 +1,4 @@
+jdbc.url=jdbc:mysql://localhost/northwind
+jdbc.password=Welcome#123
+jdbc.username=root
+jdbc.driver=com.mysql.cj.jdbcDriver

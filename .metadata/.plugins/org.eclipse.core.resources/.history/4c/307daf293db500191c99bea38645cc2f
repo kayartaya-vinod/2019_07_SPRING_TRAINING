@@ -1,0 +1,5 @@
+package co.vinod.training.entity;
+
+public class Product {
+
+}

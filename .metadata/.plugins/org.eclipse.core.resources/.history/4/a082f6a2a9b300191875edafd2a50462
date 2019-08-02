@@ -1,0 +1,42 @@
+package co.vinod.training.cfg;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.dao.impl.DummyProductDao;
+import co.vinod.training.dao.impl.JdbcProductDao;
+
+@Configuration
+public class AppConfig1 {
+
+	@Lazy // to be used with singleton beans
+	@Bean(name = "dummy")
+	public ProductDao dummy() {
+		return new DummyProductDao();
+	}
+
+	@Scope("prototype")
+	@Bean(name = { "jdbcDao", "dao" })
+	public ProductDao jdbc() {
+		JdbcProductDao dao =  new JdbcProductDao();
+		dao.setDriver("com.mysql.cj.jdbc.Driver");
+		dao.setUrl("jdbc:mysql://localhost/northwind");
+		dao.setUsername("root");
+		dao.setPassword("Welcome#123");
+		return dao;
+	}
+
+	@Scope("prototype")
+	@Bean(name="jdbc")
+	public ProductDao dao() {
+		String driver = "com.mysql.cj.jdbc.Driver";
+		String password = "Welcome#123";
+		String username = "root";
+		String url = "jdbc:mysql://localhost/northwind";
+		return new JdbcProductDao(driver, url, username, password);
+	}
+	
+}
