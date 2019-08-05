@@ -1,0 +1,77 @@
+package co.vinod.training.dao.impl;
+
+import java.util.List;
+
+import co.vinod.training.dao.DaoException;
+import co.vinod.training.dao.ProductDao;
+import co.vinod.training.entity.Product;
+
+public class JdbcTemplateProductDao implements ProductDao {
+
+	@Override
+	public void addNewProduct(Product product) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Product getProductById(Integer productId) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateProduct(Product product) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteProduct(Integer productId) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int count() throws DaoException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Product> getAllProducts() throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getProductsByCategory(Integer categoryId) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getProductsBySupplier(Integer supplierId) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getProductsByPriceRange(Double min, Double max) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getDiscontinuedProducts() throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getOutOfStockProducts() throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

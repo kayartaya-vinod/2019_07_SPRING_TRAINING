@@ -1,0 +1,17 @@
+package co.vinod.training.programs;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class P03_TestingProductDaoMethods {
+
+	public static void main(String[] args) {
+		
+		AnnotationConfigApplicationContext ctx;
+		ctx = new AnnotationConfigApplicationContext();
+		
+		
+		
+		ctx.close();
+		
+	}
+}
