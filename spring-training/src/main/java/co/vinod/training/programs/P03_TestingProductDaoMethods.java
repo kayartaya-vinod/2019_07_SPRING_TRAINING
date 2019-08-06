@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import co.vinod.training.cfg.AppConfig6;
+import co.vinod.training.cfg.AppConfig7;
 import co.vinod.training.dao.DaoException;
 import co.vinod.training.dao.ProductDao;
 import co.vinod.training.entity.Product;
@@ -16,18 +16,24 @@ public class P03_TestingProductDaoMethods {
 	public static void main(String[] args) throws DaoException {
 		
 		AnnotationConfigApplicationContext ctx;
-		ctx = new AnnotationConfigApplicationContext(AppConfig6.class);
+		ctx = new AnnotationConfigApplicationContext(AppConfig7.class);
 		
-		dao = ctx.getBean("jtDao", ProductDao.class);
+		dao = ctx.getBean("htDao", ProductDao.class);
 		System.out.println("--------------------------------------------");
 		// printDiscontinuedProducts();
 		// printOutOfStockProducts();
 		// printProductsInPriceRange();
-		updateProductPrice();
+		// updateProductPrice();
+		printProductCount();
 		
 		System.out.println("--------------------------------------------");
 		ctx.close();
 		
+	}
+
+	static void printProductCount() throws DaoException {
+		int pc = dao.count();
+		System.out.println("There are " + pc + " products.");
 	}
 
 	static void updateProductPrice() throws DaoException {
