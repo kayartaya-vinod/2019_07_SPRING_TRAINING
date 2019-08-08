@@ -2,9 +2,6 @@ package co.vinod.training.dao.impl;
 
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -40,21 +37,6 @@ public class JdbcTemplateProductDao implements ProductDao {
 		p.setDiscontinued(rs.getInt("discontinued"));
 		return p;
 	};
-
-	public JdbcTemplateProductDao() {
-		System.out.println("JdbcTemplateProductDao instantiated!");
-		System.out.println("In JdbcTemplateProductDao(), template is " + template);
-	}
-	
-	@PostConstruct
-	public void init() {
-		System.out.println("In JdbcTemplateProductDao.init(), template is " + template);
-	}
-	
-	@PreDestroy
-	public void destroy() {
-		System.out.println("Destroying the instanceof JdbcTemplateProductDao");
-	}
 
 	@Override
 	public void addNewProduct(Product product) throws DaoException {

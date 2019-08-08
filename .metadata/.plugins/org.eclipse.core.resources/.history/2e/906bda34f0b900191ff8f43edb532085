@@ -1,0 +1,5 @@
+package co.vinod.training.aspects;
+
+public class MyCustomAspect {
+
+}

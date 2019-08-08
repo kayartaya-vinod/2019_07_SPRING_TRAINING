@@ -7,4 +7,5 @@
     <typeInfo handle="=spring-training/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_71.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1450827058000"/>
     <typeInfo handle="=spring-training/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_71.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Comparable.class[Comparable" modifiers="1537" timestamp="1450827058000"/>
     <typeInfo handle="=spring-training/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_71.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1450827058000"/>
+    <typeInfo handle="=spring-training/\/Users\/vinodkumar\/.m2\/repository\/org\/springframework\/spring-orm\/5.1.8.RELEASE\/spring-orm-5.1.8.RELEASE.jar&lt;org.springframework.orm.hibernate5(HibernateTemplate.class[HibernateTemplate" modifiers="33" timestamp="1564412139000"/>
 </typeInfoHistroy>

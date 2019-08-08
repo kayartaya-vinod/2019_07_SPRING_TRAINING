@@ -47,7 +47,6 @@ public class HibernateTemplateProductDao implements ProductDao {
 
 	@Override
 	public int count() throws DaoException {
-		// select count(*) from products
 		DetachedCriteria dc = DetachedCriteria.forClass(Product.class);
 		Projection projection = Projections.rowCount();
 		dc.setProjection(projection);

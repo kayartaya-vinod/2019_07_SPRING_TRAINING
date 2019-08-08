@@ -1,0 +1,21 @@
+package co.vinod.training.aspects;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect // concern in hand
+public class MyCustomAspect {
+
+	// an aspect contains 1 or more advice
+	// an advice is a function (which provides a solution to the concern)
+	// 4 types: before, after, around, after-throwing
+	// an advice is applied on a join-point (a function in Spring/Java)
+	// a subset of join-points on which you actually apply an advice --> pointcut
+	// point is a predicate defined using AspectJ expression language
+	@Before("execution (int co.vinod.training.dao.ProductDao.count())")
+	public void logMethodInfo() {
+		
+		System.out.println("function called!");
+	}
+	
+}
