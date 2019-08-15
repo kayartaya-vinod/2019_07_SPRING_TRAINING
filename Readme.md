@@ -1,1 +1,1 @@
-Spring and Spring boot training
+Spring and Spring boot training.
