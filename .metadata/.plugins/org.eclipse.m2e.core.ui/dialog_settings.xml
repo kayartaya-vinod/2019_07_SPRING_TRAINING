@@ -48,6 +48,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring-mvc-demo"/>
 			<item value="spring-mvc-training"/>
 			<item value="spring-training"/>
 		</list>
