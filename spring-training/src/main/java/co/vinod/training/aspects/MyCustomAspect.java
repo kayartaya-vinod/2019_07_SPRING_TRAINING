@@ -7,6 +7,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
 import co.vinod.training.dao.DaoException;
@@ -28,7 +29,7 @@ public class MyCustomAspect {
 	// an advice is applied on a join-point (a function in Spring/Java)
 	// a subset of join-points on which you actually apply an advice --> pointcut
 	// point is a predicate defined using AspectJ expression language
-	// @Before("execution (* co.vinod..*Dao.*(..))")
+	@Before("execution (* co.vinod..*Dao.*(..))")
 	public void logMethodInfo(JoinPoint jp) {
 		System.out.println(">>>>>>> " + jp.getSignature().getName() + " called!");
 		System.out.println("Arguments = " + Arrays.toString(jp.getArgs()));

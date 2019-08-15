@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring MVC Demo</title>
+<link rel="stylesheet" type="text/css"
+	href="assets/bootstrap-4.3.1/css/bootstrap_yeti.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="alert alert-info">Spring MVC Demo</h1>
+		
+		<a href="./">Home</a> |
+		<a href="get-all-products">All products</a> |
+		<a href="get-discontinued-products">Discontinued products</a> |
+		<a href="get-out-of-stock-products">Out of stock products</a>
+		
+		<hr>
+		
+		<div style="min-height: 400px;">

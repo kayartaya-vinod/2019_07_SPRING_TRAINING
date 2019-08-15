@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=spring-training/src\/main\/java&lt;co.vinod.training.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1564761301000"/>
+    <typeInfo handle="=spring-training/src\/main\/java&lt;co.vinod.training.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1565795064000"/>
     <typeInfo handle="=spring-training/\/Users\/vinodkumar\/.m2\/repository\/org\/springframework\/spring-jdbc\/5.1.8.RELEASE\/spring-jdbc-5.1.8.RELEASE.jar&lt;org.springframework.jdbc.core(JdbcTemplate.class[JdbcTemplate" modifiers="33" timestamp="1564412140000"/>
     <typeInfo handle="=spring-training/\/Users\/vinodkumar\/.m2\/repository\/org\/springframework\/spring-jdbc\/5.1.8.RELEASE\/spring-jdbc-5.1.8.RELEASE.jar&lt;org.springframework.jdbc.core(RowMapper.class[RowMapper" modifiers="1537" timestamp="1564412140000"/>
     <typeInfo handle="=spring-training/\/Users\/vinodkumar\/.m2\/repository\/org\/springframework\/spring-tx\/5.1.8.RELEASE\/spring-tx-5.1.8.RELEASE.jar&lt;org.springframework.dao(DataAccessException.class[DataAccessException" modifiers="1057" timestamp="1564412141000"/>
-    <typeInfo handle="=spring-training/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_71.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1450827058000"/>
-    <typeInfo handle="=spring-training/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_71.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Comparable.class[Comparable" modifiers="1537" timestamp="1450827058000"/>
-    <typeInfo handle="=spring-training/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_71.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1450827058000"/>
     <typeInfo handle="=spring-training/\/Users\/vinodkumar\/.m2\/repository\/org\/springframework\/spring-orm\/5.1.8.RELEASE\/spring-orm-5.1.8.RELEASE.jar&lt;org.springframework.orm.hibernate5(HibernateTemplate.class[HibernateTemplate" modifiers="33" timestamp="1564412139000"/>
+    <typeInfo handle="=spring-training/\/Users\/vinodkumar\/.m2\/repository\/org\/springframework\/spring-tx\/5.1.8.RELEASE\/spring-tx-5.1.8.RELEASE.jar&lt;org.springframework.transaction(PlatformTransactionManager.class[PlatformTransactionManager" modifiers="1537" timestamp="1564412141000"/>
 </typeInfoHistroy>

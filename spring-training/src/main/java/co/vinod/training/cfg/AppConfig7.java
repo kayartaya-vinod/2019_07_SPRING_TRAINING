@@ -13,10 +13,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import co.vinod.training.entity.Product;
 
+@EnableTransactionManagement // Step #1 for Tx management
 @EnableAspectJAutoProxy
 @Configuration
 @PropertySource({ "classpath:jdbc.properties" })
@@ -31,6 +34,15 @@ public class AppConfig7 {
 	@Value("${jdbc.password}")
 	String password;
 
+	// Step #2 for Tx management
+	@Bean
+	public HibernateTransactionManager txMgr(SessionFactory sf) {
+		// This object using AOP injects the transaction-manager into
+		// the HibernateTemplate instance which in turn is injected
+		// in our HibernateTemplateProductDao
+		return new HibernateTransactionManager(sf);
+	}
+	
 	@Bean
 	public DataSource ds() {
 		BasicDataSource bds = new BasicDataSource();

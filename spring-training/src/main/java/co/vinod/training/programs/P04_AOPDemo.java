@@ -30,6 +30,8 @@ public class P04_AOPDemo {
 			p1.setUnitPrice(p1.getUnitPrice() + 1);
 			dao.updateProduct(p1);
 			System.out.println("Product price changed1");
+			p1 = dao.getProductById(22);
+			System.out.println("After updating, p1.price = $" + p1.getUnitPrice());
 		} catch (DaoException e) {
 			System.out.println("Sorry! could not updated product price.");
 		}
