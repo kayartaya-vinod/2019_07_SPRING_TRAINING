@@ -15,7 +15,8 @@
 		<a href="./">Home</a> |
 		<a href="get-all-products">All products</a> |
 		<a href="get-discontinued-products">Discontinued products</a> |
-		<a href="get-out-of-stock-products">Out of stock products</a>
+		<a href="get-out-of-stock-products">Out of stock products</a> |
+		<a href="add-product">Add new product details</a>
 		
 		<hr>
 		

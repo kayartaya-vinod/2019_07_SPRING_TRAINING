@@ -8,6 +8,17 @@
 		<welcome-file>/WEB-INF/views/home.jsp</welcome-file>
 	</welcome-file-list>
 	
+	<servlet>
+		<servlet-name>s0</servlet-name>
+		<servlet-class>co.vinod.training.web.HelloServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>s0</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
 	<!-- This creates an instance of DispatcherServlet, which looks by default for an XML
 	with the name of /WEB-INF/s1-servlet.xml. Alternately, you may specify the name of the XML you have
 	by supplying an init-param called contextConfigLocation -->

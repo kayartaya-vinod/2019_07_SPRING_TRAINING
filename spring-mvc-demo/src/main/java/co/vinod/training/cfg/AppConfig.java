@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
@@ -22,17 +23,30 @@ import co.vinod.training.entity.Product;
 
 @EnableTransactionManagement // Step #1 for Tx management
 @Configuration
-@PropertySource({ "classpath:jdbc.properties" })
+//@PropertySource({ "classpath:jdbc.properties", "classpath:custom-errors.properties" })
 @ComponentScan(basePackages = { "co.vinod.training.dao", "co.vinod.training.web"})
 public class AppConfig {
-	@Value("${jdbc.driver}")
-	String driver;
-	@Value("${jdbc.url}")
-	String url;
-	@Value("${jdbc.username}")
-	String username;
-	@Value("${jdbc.password}")
-	String password;
+//	@Value("${jdbc.driver}")
+//	String driver;
+//	@Value("${jdbc.url}")
+//	String url;
+//	@Value("${jdbc.username}")
+//	String username;
+//	@Value("${jdbc.password}")
+//	String password;
+
+	String driver = "com.mysql.cj.jdbc.Driver";
+	String url="jdbc:mysql://localhost/northwind";
+	String username="root";
+	String password="Welcome#123";
+	
+	// loading properties file for custom error messages
+	@Bean
+	public ResourceBundleMessageSource messageSource() {
+		ResourceBundleMessageSource bundle = new ResourceBundleMessageSource();
+		bundle.addBasenames("custom-errors");
+		return bundle;
+	}
 	
 	@Bean
 	public ViewResolver viewResolver() {

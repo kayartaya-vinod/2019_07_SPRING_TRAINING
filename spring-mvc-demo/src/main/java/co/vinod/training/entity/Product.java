@@ -38,5 +38,5 @@ public class Product {
 	private Double unitPrice;
 	@Column(name = "reorder_level")
 	private Integer reorderLevel;
-	private Integer discontinued;
+	private Integer discontinued = 0;
 }

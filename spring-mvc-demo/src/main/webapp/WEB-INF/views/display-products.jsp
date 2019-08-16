@@ -7,6 +7,7 @@
 			<th>Name</th>
 			<th>Unit price</th>
 			<th>Quantity per unit</th>
+			<th>Actions</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15,6 +16,10 @@
 				<td>${p.productName}</td>
 				<td>${p.unitPrice}</td>
 				<td>${p.quantityPerUnit}</td>
+				<td>
+					<a href="edit-product?id=${p.productId}">Edit</a> | 
+					<a href="">Delete</a>
+				</td>
 			</tr>
 		</c:forEach>
 	</tbody>
